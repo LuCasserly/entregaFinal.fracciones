@@ -1,20 +1,20 @@
 let carrito = [];
 
-const agregarAlCarrito = (nombre, precio) =>{
+const agregarAlCarrito = (nombre, precio) => {
 
-    carrito.push({nombre, precio})
-    
+    carrito.push({ nombre, precio })
+
     actualizarContador()
-    
+
     alert(`Agregaste: ${nombre} al carrito`)
 }
 
-const actualizarContador = ()=>{
+const actualizarContador = () => {
 
     document.querySelector("#contador-carrito").textContent = carrito.length
 }
 
-window.addEventListener("BeforeUnload", ()=>{
-
+window.addEventListener("beforeunload", () => {
+    
     localStorage.setItem("carrito", JSON.stringify(carrito))
 });

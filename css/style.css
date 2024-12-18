@@ -427,3 +427,76 @@ input {
         height: auto;
     }
 }
+
+/* CURSOS */
+
+.h2-cursos {
+    text-decoration:underline ;
+}
+
+.icono-carrito {
+    display:block;
+    font-size: 25px;
+    margin-right: 15px;
+    text-align: right;
+    text-decoration: none;
+}
+
+.cursos {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; 
+    margin-top: 20px; 
+    margin-bottom: 50px;
+}
+
+.curso {
+    background: #5dc584; 
+    padding: 15px; 
+    border-radius: 10px; 
+    text-align: center; 
+}
+
+.curso h2 {
+    margin-bottom: 10px; 
+}
+
+.curso .precio {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.curso button {
+    background: #333; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+}
+
+.curso button:hover {
+    background: #555; 
+}
+
+/* CARRITO */
+
+.h1-carrito{
+    text-decoration: underline;
+}
+
+.h2-carrito {
+    text-align: left;
+}
+
+.boton-compra {
+    background: #333; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px;
+}
+
+.boton-compra:hover {
+        background: #555; 
+    }
+
+
+ 

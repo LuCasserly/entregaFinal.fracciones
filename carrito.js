@@ -17,10 +17,11 @@ const mostrarCarrito = () => {
         producto.innerHTML = `
             <h2>${item.nombre}</h2>
             <p class="precio">$${item.precio}</p>
-            <button onclick="eliminarDelCarrito(${indice})">Eliminar</button>
+            <button onclick="eliminarDelCarrito(${indice})">Eliminar </button>
         `;
         lista.appendChild(producto);
     });
+
 
     actualizarResumen();
 };
@@ -50,7 +51,7 @@ const eliminarDelCarrito = (indice) => {
 const realizarCompra = () => {
     alert("Compra realizada con éxito");
     localStorage.removeItem("carrito");
-    window.location.href = "index.html";
+    window.location.href = "../html/cursos.html";
 };
 
 

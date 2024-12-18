@@ -5,33 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <h1>Carrito de compras</h1>
-       
-    </header>
+        <header>
+            <a class="Home" href="../index.html"> <img class="img-home" src="../assets/HOME.png" alt="home"></a>
+            <div class="titulo"> Fracciones con Lu </div>
+            <a name="arriba"></a>
+            <h1 class="todo-sobre-fracciones"> TODO SOBRE FRACCIONES</h1>
+            <img src="../assets/TODO SOBRE FRACCIONES - LOGO.png" alt="logo" width="250px">
 
-    <!-- Seccion principal del carrito -->
-    <section id="carrito" class="productos">
+            <nav class="Menu">
+                <ul class="enlaces">
+                    <li><a href="Clasificacion.html"> Clasificación de fracciones</a></li>
+                    <li><a href="fracciones-equivalentes.html"> Fracciones equivalentes</a></li>
+                    <li><a href="html/contacto.html"> Contacto </a></li>
+                    <!-- PROXIMAMAMENTE
+                        <li><a href="suma-resta.html">Suma y resta de fracciones</a></li>
+                        <li><a href="multiplicacion-division.html">Multiplicación y división de fracciones</a></li> -->
+                </ul>
+            </nav>
 
-        <h2>Tu carrito</h2>
-        <div id="lista-carrito">
-            <!-- Lista de productos -->
-        </div>
+            <h1 class="h1-carrito">Carrito de compras</h1>
 
-        <!-- Seccion de resumen del carrito -->
-        <div id="resumen-carrito">
-            <p>Total de productos: <span id="total-productos">0</span></p>
-            <p>Importe total: $<span id="importe-total">0</span></p>
-        </div>
+        </header>
 
-        <button onclick="realizarCompra()">Finalizar la compra</button><!--  boton de compra -->
 
-    </section>
+        <section id="carrito" class="productos">
 
-    <script src="../carrito.js"></script>
+            <h2 class="h2-carrito">Tu carrito: </h2>
+                <div id="lista-carrito">
+
+                </div>
+
+            <div id="resumen-carrito">
+                <p>Total de productos: <span id="total-productos">0</span></p>
+                <p>Importe total: $<span id="importe-total">0</span></p>
+            </div>
+
+            <button class="boton-compra" onclick="realizarCompra()">Finalizar la compra</button>
+
+        </section>
+
+        <script src="../carrito.js"></script>
 </body>
 
 </html>
